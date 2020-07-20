@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Roboto', sans-serif;
+    background-color: rgb(228, 220, 220); 
+
+}
+
+header {
+    width: 940px;
+    margin: 30px auto;
+   
+}
+
+.header_content {
+    display: flex;
+    justify-content: left;
+}
+
+.header_content img {
+    padding-right: 122.4px;
+
+    width: 90.6px;
+    height: 26.9px;
+}
+
+
+.header_content a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    line-height: 26px;
+
+    padding-right: 30px;
+    padding-bottom: 8px;
+}
+
+.header_content a:first-child  {
+    padding-right: 30px;
+}
+
+header a:hover {
+    transition: color 200ms;
+    color: rgb(112, 94, 67);
+}
+
+/* === INTRODUCTION CONTENT === */
+
+.introduction {
+    width: 940px;
+    height: 366px;
+    margin: 0px auto;
+    position: relative;
+
+    background-color: #f5cac4;
+    border-radius: 30px;
+
+}
+
+.text_introduction {
+    position: absolute;
+    top: 117px;
+    left: 60px;
+    bottom: 117px;
+    right: 564px;
+}
+
+.text_introduction h1 {
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.text_introduction p{
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.introduction img {
+    position: absolute;
+    top: 66px;
+    right: 100px;
+    left: 624px;
+
+    width: 216px;
+    height: 300px;
+}
+
+/* === CARDS === */
+
+.cards {
+
+    width: 940px;
+    height: 366px;
+    margin: 50px auto;
+
+    
+}
+
+.cards .title h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.card_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 900px;
+
+    padding-bottom: 120px;
+}
+
+.card_content .card img{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+}
+
+.card_content .card h2 {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.card_content .card p{
+    font-size: 14px;
+    color: #777777;
+    padding-top: 5px;
+}
+/* === FOOTER === */
+
+footer {
+    bottom: 0;
+    position: fixed;
+    height: 62px;
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+
+
+.footer_content p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+
+    padding-top: 23px;
+}
+
+/* === ABOUT ===*/
+
+.about_content {
+    width: 940px;
+    margin: 50px auto;
+
+    padding-bottom: 50px;
+}
+
+.text_content {
+    margin: 30px 0px;
+}
+
+.text_content h1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+
+}
+
+.text_content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+
+    padding-top: 20px;
+}
+
+/* === MODAL ACTIVE === */
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.active {
+    background-color: #000000af;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+    visibility: visible;
+    opacity: 1 ;
+}
+
+.active .modal_content {
+    background-color: #ffffff;
+    width: 660px;
+    height: 413px;
+
+    margin: 300px auto;
+
+    border-radius: 16px;
+
+    position: relative;
+}
+
+.active .modal_content img {
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+}
+
+.active .modal_content .modal_text {
+    position: absolute;
+    top: 250px;
+    left: 164px;
+    right: 164px;
+    
+    text-align: center;
+}
+
+.modal_text h2 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.modal_text p{
+    color: #777777;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.close_modal {
+    position: absolute;
+    top: 364px;
+    left: 281px;
+    right: 281px;
+
+    cursor: pointer;
+}
+
+.close_modal p{
+    color: #999999;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.close_modal p:hover{
+    transition: color 200ms;
+    color: black;
+}
