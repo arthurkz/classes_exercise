@@ -5,9 +5,6 @@ import { User } from './user'
 import * as bcrypt from 'bcrypt';
 import { AuthCredentialsDto } from './../../auth/dto/auth-credentials.dto';
 
-
-
-
 @Injectable()
 export class UsersService { 
 
