@@ -1,3 +1,4 @@
+.env
 ~
 .sw[mnpcod]
 .log
@@ -17,7 +18,7 @@ npm-debug.log*
 coverage/
 www/
 dist/
-.env
+
 node_modules/
 tmp/
 temp/
