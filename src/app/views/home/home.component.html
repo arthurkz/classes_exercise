@@ -1,0 +1,54 @@
+
+<div id="modal">
+    <div style="display: block" class="spinner"></div>
+</div>
+
+<mat-card class="home mat-elevation-z8">
+    <mat-card-title class="title">Bem Vindo ao TecnoTrello</mat-card-title>
+    <mat-card-subtitle class="subtitle">
+        Preencha todos os campos indicados e faça corretamente o Upload do arquivo em Excel para
+        preenchimento do Trello.
+    </mat-card-subtitle>
+</mat-card>
+
+<mat-card class="content_page mat-elevation-z8">
+    <mat-card-title>Campos para Preenchimento</mat-card-title>
+
+    <form>
+        <mat-form-field>
+            <input id="contrato" matInput placeholder="Contrato" [(ngModel)]="infoTecnotrello.contrato" name="contrato"
+                maxlength="3">
+        </mat-form-field>
+        <mat-form-field>
+            <input id="os" matInput placeholder="Os" [(ngModel)]="infoTecnotrello.os" name="os" maxlength="3">
+        </mat-form-field>
+    </form>
+
+    <input class="form-control" type="file" id="input" accept=".xls,.xlsx">
+
+    <div id="buttons">
+        <button (click)="fillAllTrello()" mat-raised-button class="btn btn-primary" color="primary">
+            Preencher Trello
+        </button>
+
+        <button (click)="fillNewCards()" id="newFill" mat-raised-button class="btn btn-primary" color="primary">
+            Inserir Novos Cartões
+        </button>
+
+        <button (click)="updateTrello()" id="newFill" mat-raised-button class="btn btn-primary" color="primary">
+            Atualizar Trello
+        </button>
+
+        <button (click)="newFill()" id="newFill" mat-raised-button class="btn btn-primary" color="primary">
+            Novo Preenchimento
+        </button>
+
+       
+
+        <button (click)="logOff()" id="logOff" mat-raised-button class="btn btn-primary" color="warn">
+            Log Off
+        </button>
+        
+    </div>
+
+</mat-card>

@@ -1,0 +1,39 @@
+
+.login{
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 12px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+form {
+    display: flex;
+    flex-direction:column;
+}
+
+.buttons {
+    margin-top: 12px;
+    display: block;
+    text-align: center;
+}
+
+.buttons button{
+    width: 200px;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    transition: color;
+    background-color: rgb(40, 114, 224);
+    color: white;
+}
+
+.buttons button + button{
+    margin-left: 12px;
+}

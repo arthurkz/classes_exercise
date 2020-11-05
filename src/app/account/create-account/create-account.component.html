@@ -1,0 +1,36 @@
+<mat-card class="header">
+    <app-header></app-header>
+</mat-card>
+
+<mat-card class="create-account mat-elevation-z8">
+    <mat-card-title class="title text-center">Criar conta no Tecnotrello</mat-card-title>
+
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+        <mat-form-field>
+            <input matInput placeholder="Nome" class="form-control" type="text" name="name" id="name" [(ngModel)]="account.name" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="E-mail/Username" class="form-control" type="email" name="email" id="email" [(ngModel)]="account.email" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Senha" class="form-control" type="password" name="password" id="password" [(ngModel)]="account.password" required>
+        </mat-form-field>
+
+        <a class="buttons"mat-raised-button class="btn btn-primary" color="primary" href="https://trello.com/app-key" target="_blank">
+            Gerar Chaves de Acesso
+        </a>
+    
+
+        <mat-form-field>
+            <input matInput placeholder="Key" class="form-control" type="password" name="key" id="key" [(ngModel)]="account.keyTrello" required>
+        </mat-form-field>
+
+        <mat-form-field >
+            <input matInput placeholder="Token" class="form-control" type="password" name="token" id="token" [(ngModel)]="account.tokenTrello" required>
+        </mat-form-field>
+
+        <div class="buttons">
+            <button type="submit" color="primary" mat-raised-button class="btn btn-primary btn-block" [disabled]="form.form.invalid">Criar minha conta</button>
+        </div>
+    </form>
+</mat-card>
