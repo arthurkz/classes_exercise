@@ -16,7 +16,7 @@ import { environment } from 'src/environments/environment';
 
 export class HomeComponent implements OnInit {
 
-  resultJson = 'https://tecnotrello-apiexcel.herokuapp.com/ldExport'
+  resultJson = 'https://cors-anywhere.herokuapp.com/https://tecnotrello-apiexcel.herokuapp.com/ldExport'
   infoTecnotrello: any = {
     contrato: '',
     os: '',

@@ -14,7 +14,7 @@ export class TecnotrelloService {
     password: ''
   }
 
-  baseUrl = "https://tecnotrello-apiexcel.herokuapp.com/ldExport"
+  baseUrl = "https://cors-anywhere.herokuapp.com/https://tecnotrello-apiexcel.herokuapp.com/ldExport"
 
   constructor(private snackBar: MatSnackBar, public http: HttpClient) { }
 
